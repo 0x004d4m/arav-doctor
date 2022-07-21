@@ -15,7 +15,11 @@ return new class extends Migration
     {
         Schema::create('working_hours', function (Blueprint $table) {
             $table->id();
+
+            $table->string('text');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

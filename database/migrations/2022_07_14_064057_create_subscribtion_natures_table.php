@@ -15,7 +15,16 @@ return new class extends Migration
     {
         Schema::create('subscribtion_natures', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->string('name_fr');
+
+            $table->unsignedBigInteger('subscribtion_status_id');
+            $table->foreign('subscribtion_status_id')->references('id')->on('subscribtion_statuses');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

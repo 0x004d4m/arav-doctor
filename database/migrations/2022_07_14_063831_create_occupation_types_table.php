@@ -15,7 +15,17 @@ return new class extends Migration
     {
         Schema::create('occupation_types', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->string('name_fr');
+            $table->string('visable_by_occupation');
+
+            $table->unsignedBigInteger('subscriber_type_id');
+            $table->foreign('subscriber_type_id')->references('id')->on('subscriber_types');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

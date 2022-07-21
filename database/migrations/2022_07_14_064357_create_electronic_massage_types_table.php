@@ -15,7 +15,26 @@ return new class extends Migration
     {
         Schema::create('electronic_massage_types', function (Blueprint $table) {
             $table->id();
+
+            $table->string('title');
+            $table->string('method');
+            $table->string('reason');
+
+
+            $table->unsignedBigInteger('from_user_id');
+            $table->foreign('from_user_id')->references('id')->on('users');
+
+            $table->unsignedBigInteger('to_user_id');
+            $table->foreign('to_user_id')->references('id')->on('users');
+
+            $table->string('text_ar');
+            $table->string('text_en');
+            $table->string('text_fr');
+
+            $table->boolean('read');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

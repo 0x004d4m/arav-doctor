@@ -8,6 +8,7 @@
         <input
         	type="number"
         	name="{{ $field['name'] }}"
+        	step="{{ $field['step'] ?? 1 }}"
             value="{{ old(square_brackets_to_dots($field['name'])) ?? $field['value'] ?? $field['default'] ?? '' }}"
             @include('crud::fields.inc.attributes')
         	>

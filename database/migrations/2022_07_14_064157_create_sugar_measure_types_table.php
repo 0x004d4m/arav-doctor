@@ -15,7 +15,13 @@ return new class extends Migration
     {
         Schema::create('sugar_measure_types', function (Blueprint $table) {
             $table->id();
+
+            $table->string('type_ar');
+            $table->string('type_en');
+            $table->string('type_fr');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

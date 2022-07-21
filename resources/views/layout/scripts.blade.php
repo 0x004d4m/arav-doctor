@@ -1,0 +1,12 @@
+<script src="{{url('template/assets/js/jquery.min.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{url('template/assets/js/popper.min.js')}}"></script>
+<script src="{{url('template/assets/js/bootstrap.min.js')}}"></script>
+<script src="{{url('template/assets/js/plugins.min.js')}}"></script>
+<script src="{{url('template/assets/lib/is/is.min.js')}}"></script>
+<script src="{{url('template/assets/lib/stickyfilljs/stickyfill.min.js')}}"></script>
+<script src="{{url('template/assets/lib/sticky-kit/sticky-kit.min.js')}}"></script>
+<script src="{{url('template/assets/lib/loaders.css/loaders.css.js')}}"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="{{url('template/assets/lib/flexslider/jquery.flexslider-min.js')}}"></script>
+<script src="{{url('template/assets/js/theme.min.js')}}"></script>

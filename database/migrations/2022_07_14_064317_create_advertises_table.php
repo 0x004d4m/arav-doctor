@@ -15,7 +15,15 @@ return new class extends Migration
     {
         Schema::create('advertises', function (Blueprint $table) {
             $table->id();
+
+            $table->string('text_ar');
+            $table->string('text_en');
+            $table->string('text_fr');
+            $table->double('price_jd');
+            $table->double('price_usd');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

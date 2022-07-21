@@ -15,7 +15,19 @@ return new class extends Migration
     {
         Schema::create('medical_advices', function (Blueprint $table) {
             $table->id();
+
+            $table->string('text_ar');
+            $table->string('text_en');
+            $table->string('text_fr');
+
+            $table->unsignedBigInteger('role_id');
+            $table->foreign('role_id')->references('id')->on('roles');
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

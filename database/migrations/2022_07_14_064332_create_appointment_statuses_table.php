@@ -15,7 +15,13 @@ return new class extends Migration
     {
         Schema::create('appointment_statuses', function (Blueprint $table) {
             $table->id();
+
+            $table->string('status_ar');
+            $table->string('status_en');
+            $table->string('status_fr');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

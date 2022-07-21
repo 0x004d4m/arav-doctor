@@ -2,10 +2,18 @@
 
 namespace App\Models;
 
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class AppointmentStatus extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes, CrudTrait;
+
+    protected $fillable = [
+        'status_ar',
+        'status_en',
+        'status_fr',
+    ];
 }

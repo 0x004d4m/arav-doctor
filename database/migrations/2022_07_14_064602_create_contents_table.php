@@ -15,7 +15,13 @@ return new class extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
+
+            $table->string('text_ar');
+            $table->string('text_en');
+            $table->string('text_fr');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

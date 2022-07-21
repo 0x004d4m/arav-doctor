@@ -15,7 +15,14 @@ return new class extends Migration
     {
         Schema::create('movement_natures', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->string('name_fr');
+            $table->double('range');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
