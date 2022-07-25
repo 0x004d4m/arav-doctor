@@ -19,17 +19,13 @@ return new class extends Migration
             $table->string('title');
             $table->string('method');
             $table->string('reason');
-
+            $table->string('text');
 
             $table->unsignedBigInteger('from_user_id');
             $table->foreign('from_user_id')->references('id')->on('users');
 
             $table->unsignedBigInteger('to_user_id');
             $table->foreign('to_user_id')->references('id')->on('users');
-
-            $table->string('text_ar');
-            $table->string('text_en');
-            $table->string('text_fr');
 
             $table->boolean('read');
 

@@ -15,5 +15,11 @@ class Country extends Model
         'name_ar',
         'name_en',
         'name_fr',
+        'flag',
+        'phone_code',
+        'police_number',
+        'immediate_aid_number',
+        'fire_fighting_number',
     ];
+
 }

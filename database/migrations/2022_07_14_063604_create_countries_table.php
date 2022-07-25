@@ -19,6 +19,11 @@ return new class extends Migration
             $table->string('name_ar');
             $table->string('name_en');
             $table->string('name_fr');
+            $table->string('flag');
+            $table->string('phone_code');
+            $table->string('police_number');
+            $table->string('immediate_aid_number');
+            $table->string('fire_fighting_number');
 
             $table->timestamps();
             $table->softDeletes();
