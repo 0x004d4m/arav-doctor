@@ -17,14 +17,8 @@ class PaidService extends Model
         'name_fr',
         'price_jd',
         'price_usd',
-        'user_id',
         'subscriber_type_id',
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 
     public function subscriberType()
     {

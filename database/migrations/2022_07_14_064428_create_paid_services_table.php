@@ -22,9 +22,6 @@ return new class extends Migration
             $table->string('price_jd');
             $table->string('price_usd');
 
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
-
             $table->unsignedBigInteger('subscriber_type_id');
             $table->foreign('subscriber_type_id')->references('id')->on('subscriber_types');
 

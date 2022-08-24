@@ -45,7 +45,7 @@ class CaloriesTypesController extends CrudController
         $this->crud->setColumnDetails('size_fr',['label' => "Size FR",'name' => "size_fr",'type' => 'text']);
         $this->crud->setColumnDetails('weight_in_grams',['name' => "weight_in_grams",'type' => 'text']);
         $this->crud->setColumnDetails('calories',['name' => "calories",'type' => 'text']);
-        $this->crud->setColumnDetails('cts_status_id',['name' => "cts_status_id",'type' => 'text']);
+        $this->crud->setColumnDetails('calories_type_id',['name' => "calories_type_id",'type' => 'text']);
 
         $this->crud->removeColumns(['name_en','name_fr','size_en','size_fr']);
     }
@@ -71,7 +71,7 @@ class CaloriesTypesController extends CrudController
         $this->crud->addField(['name' => 'size_fr', 'type' => 'text']);
         $this->crud->addField(['name' => 'weight_in_grams', 'type' => 'number', 'step' => '0.01',]);
         $this->crud->addField(['name' => 'calories', 'type' => 'number', 'step' => '0.01',]);
-        $this->crud->addField(['name' => 'cts_status_id', 'type' => 'text']);
+        $this->crud->addField(['name' => 'calories_type_id', 'type' => 'text']);
     }
 
     protected function setupUpdateOperation()
@@ -95,7 +95,7 @@ class CaloriesTypesController extends CrudController
         $this->crud->addField(['name' => 'size_fr', 'type' => 'text']);
         $this->crud->addField(['name' => 'weight_in_grams', 'type' => 'number', 'step' => '0.01']);
         $this->crud->addField(['name' => 'calories', 'type' => 'number', 'step' => '0.01']);
-        $this->crud->addField(['name' => 'cts_status_id', 'type' => 'text']);
+        $this->crud->addField(['name' => 'calories_type_id', 'type' => 'text']);
     }
 
     protected function setupShowOperation()
@@ -119,6 +119,6 @@ class CaloriesTypesController extends CrudController
         $this->crud->setColumnDetails('size_fr',['label' => "Size FR",'name' => "size_fr",'type' => 'text']);
         $this->crud->setColumnDetails('weight_in_grams',['name' => "weight_in_grams",'type' => 'text']);
         $this->crud->setColumnDetails('calories',['name' => "calories",'type' => 'text']);
-        $this->crud->setColumnDetails('cts_status_id',['name' => "cts_status_id",'type' => 'text']);
+        $this->crud->setColumnDetails('calories_type_id',['name' => "calories_type_id",'type' => 'text']);
     }
 }

@@ -20,7 +20,7 @@ class CaloriesType extends Model
         'size_fr',
         'weight_in_grams',
         'calories',
-        'cts_status_id',
+        'calories_type_id',
         'food_type_id',
     ];
 

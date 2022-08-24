@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+include_once 'Website/client.php';
+include_once 'Website/doctor.php';
+include_once 'Website/general.php';
+
 Route::get('/', function () {
     return view('welcome');
 });

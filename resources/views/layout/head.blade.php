@@ -12,4 +12,8 @@
 <link href="https://fonts.googleapis.com/css?family=Oxygen%7cRaleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <link href="{{url('template/assets/lib/loaders.css/loaders.min.css')}}" rel="stylesheet">
 <link href="{{url('template/assets/lib/flexslider/flexslider.css')}}" rel="stylesheet">
-<link href="{{url('template/assets/css/theme.css')}}" rel="stylesheet">
+@if (Session::get('locale') == 'ar')
+    <link href="{{url('template/assets/css/theme-rtl.css')}}" rel="stylesheet">
+@else
+    <link href="{{url('template/assets/css/theme.css')}}" rel="stylesheet">
+@endif

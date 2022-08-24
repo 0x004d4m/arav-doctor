@@ -37,15 +37,6 @@ class PaidServicesController extends CrudController
             'model' => 'App\Models\SubscriberType'
         ]);
 
-        $this->crud->setColumnDetails('user_id',[
-            'label' => "User",
-            'type' => "select",
-            'name' => 'user_id',
-            'entity' => 'user',
-            'attribute' => "name",
-            'model' => 'App\Models\User'
-        ]);
-
         $this->crud->setColumnDetails('name_ar',['name' => "name_ar",'type' => 'text']);
         $this->crud->setColumnDetails('name_en',['name' => "name_en",'type' => 'text']);
         $this->crud->setColumnDetails('name_fr',['name' => "name_fr",'type' => 'text']);
@@ -64,15 +55,6 @@ class PaidServicesController extends CrudController
             'entity' => 'subscriberType',
             'attribute' => "name_ar",
             'model' => 'App\Models\SubscriberType'
-        ]);
-
-        $this->crud->addField([
-            'label' => "User",
-            'type' => "relationship",
-            'name' => 'user_id',
-            'entity' => 'user',
-            'attribute' => "name",
-            'model' => 'App\Models\User'
         ]);
 
         $this->crud->addField(['name' => "name_ar",'type' => 'text']);
@@ -95,15 +77,6 @@ class PaidServicesController extends CrudController
             'model' => 'App\Models\SubscriberType'
         ]);
 
-        $this->crud->addField([
-            'label' => "User",
-            'type' => "relationship",
-            'name' => 'user_id',
-            'entity' => 'user',
-            'attribute' => "name",
-            'model' => 'App\Models\User'
-        ]);
-
         $this->crud->addField(['name' => "name_ar",'type' => 'text']);
         $this->crud->addField(['name' => "name_en",'type' => 'text']);
         $this->crud->addField(['name' => "name_fr",'type' => 'text']);
@@ -122,15 +95,6 @@ class PaidServicesController extends CrudController
             'entity' => 'subscriberType',
             'attribute' => "name_ar",
             'model' => 'App\Models\SubscriberType'
-        ]);
-
-        $this->crud->setColumnDetails('user_id',[
-            'label' => "User",
-            'type' => "select",
-            'name' => 'user_id',
-            'entity' => 'user',
-            'attribute' => "name",
-            'model' => 'App\Models\User'
         ]);
 
         $this->crud->setColumnDetails('name_ar',['name' => "name_ar",'type' => 'text']);

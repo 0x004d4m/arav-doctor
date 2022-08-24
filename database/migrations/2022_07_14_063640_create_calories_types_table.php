@@ -28,7 +28,8 @@ return new class extends Migration
 
             $table->string('calories');
 
-            $table->unsignedBigInteger('cts_status_id');
+            $table->unsignedBigInteger('calories_type_id');
+            $table->foreign('calories_type_id')->references('id')->on('calories_types');
 
             $table->unsignedBigInteger('food_type_id');
             $table->foreign('food_type_id')->references('id')->on('food_types');
